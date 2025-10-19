@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+
+}
+
+/*a root e uma pseudo class onde o que definimos dentro dela ira servir para o documento inteiro, e tipo a raiz da arovre*/
+/* -- significa variavel em css*/
+/*essa questao de colocar as variavel e bem util pois quando queremos mudar a cor de algo, e so mudar na variavel que ja muda o restante da pagina*/
+:root {
+    --cor01: #c5ebd6;
+    --cor02: #83e1ad;
+    --cor03: #3ddc84;
+    --cor04: #2fa866;
+    --cor05: #1a5c37;
+    --cor06: #063d1e;
+
+    --font-padrao: Arial, Verdana, sans-serif;
+    --font-destaque: "Bebas Neue", sans-serif;
+    --font-android: 'Android';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor01);
+    font-family: var(--font-padrao);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main Strong {
+
+    color: var(--cor04);
+    font-weight: bold;
+
+}
+
+main a {
+
+    text-decoration: none;
+    font-weight: bold;
+
+    color: var(--cor05);
+    background-color: var(--cor01);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor03);
+    margin: 0px -20px;
+}
+
+div.video {
+    background-color: var(--cor05);
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+
+}
+
+div.video>iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+header>h1 {
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    min-width: 150px;
+    text-align: center;
+    padding: 50px;
+}
+
+
+header>p {
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+nav {
+    background-color: var(--cor01);
+    padding: 5px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.428);
+}
+
+nav>a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .3s;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
+}
+
+nav>a:hover {
+    background-color: var(--cor03);
+    color: var(--cor05);
+}
+
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor05);
+    font-family: var(--font-android);
+
+}
+
+main h2 {
+    font-family: var(--font-android);
+    color: var(--cor04);
+    font-size: 2em;
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    text-indent: 8px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+    font-size: .8em;
+    padding: 5px;
+}
+
+aside>h3 {
+    background-color: var(--cor04);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 0px 0px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.466);
+
+}
+
+aside {
+    background-color: var(--cor01);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside>ul {
+    /* Define o marcador da lista como um emoji de check (✅) seguido de um espaço */
+    list-style-type: '\2705\00A0';
+    /* Posiciona o marcador da lista para dentro do conteúdo do item */
+    list-style-position: inside;
+    /* Divide a lista em duas colunas */
+    columns: 2;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor01);
+}
