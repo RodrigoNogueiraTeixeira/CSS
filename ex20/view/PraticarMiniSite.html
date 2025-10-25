@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Site</title>
+
+    <style>
+        :root {
+            --cor1: #BBE5ED;
+            --cor02: #773344;
+
+            --font-padrdao: 'arial';
+        }
+
+        body {
+            background-color: var(--cor1);
+        }
+
+        header {
+            background: white;
+            border-radius: 6px;
+            /* height: 200px; */
+            /* Removido para permitir que o cabeçalho se ajuste ao conteúdo */
+
+        }
+
+        header>h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: var(--cor02);
+            padding: 20px;
+            font-size: 50px;
+
+        }
+
+        header>p {
+            text-align: center;
+            margin-top: -20px;
+            font-size: 18px;
+            color: var(--cor02);
+        }
+
+        nav {
+
+            margin-top: 34px;
+            /* Adiciona a margem superior para empurrar para baixo */
+            height: 45px;
+            padding-top: 30px;
+            background-color: rgb(141, 195, 250);
+
+        }
+
+        nav>a {
+            margin-left: 12px;
+            padding: 5px;
+            font-size: 23px;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        nav>a:hover {
+            background-color: rgb(93, 175, 247);
+            color: white;
+            transition: 1s;
+            border-radius: 5%;
+        }
+
+        main {
+            background-color: white;
+            color: var(--cor02);
+            margin-top: 30px;
+            border-radius: 5px;
+            height: 350px;
+        }
+
+        main>h2 {
+            padding-top: 8px;
+            padding-left: 10px;
+        }
+
+        main>ol {
+            font-size: 25px;
+            columns: 2;
+            list-style-type: '\✔️\00A0';
+            padding-left: 50px;
+        }
+
+        ol>li:hover {
+            color: #b9b9f5;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Produtos Beleza</h1>
+        <p class="paragrafo-menu">A mais de 100 anos no mercado, somos a maior de todas!</p>
+
+        <nav>
+            <a href="https://www.netflix.com/br/" target="_blank">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Vídeos</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h2>Lista Produtos Mais Utilizado No Mundo Inteiro:</h2>
+        <ol>
+            <li>Creme Nike</li>
+            <li>Creme Riachuelo</li>
+            <li>Perfume Aroma Burnes</li>
+            <li>Perfume Nhy</li>
+            <li>Champoo</li>
+            <li>Tenis 49 Nike</li>
+        </ol>
+    </main>
+
+
+</body>
+</html>
